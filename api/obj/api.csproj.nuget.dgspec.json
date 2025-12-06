@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/liviuandrei/study/api/api.csproj": {}
+    "/Users/liviuandrei/code/projects/study/api/api.csproj": {}
   },
   "projects": {
-    "/Users/liviuandrei/study/api/api.csproj": {
+    "/Users/liviuandrei/code/projects/study/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/liviuandrei/study/api/api.csproj",
+        "projectUniqueName": "/Users/liviuandrei/code/projects/study/api/api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/liviuandrei/study/api/api.csproj",
+        "projectPath": "/Users/liviuandrei/code/projects/study/api/api.csproj",
         "packagesPath": "/Users/liviuandrei/.nuget/packages/",
-        "outputPath": "/Users/liviuandrei/study/api/obj/",
+        "outputPath": "/Users/liviuandrei/code/projects/study/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/liviuandrei/.nuget/NuGet/NuGet.Config"
@@ -45,6 +45,14 @@
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.0, )"
             }
