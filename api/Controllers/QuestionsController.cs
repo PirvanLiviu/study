@@ -1,6 +1,7 @@
 using Api.Models;
 using Api.Dtos;
 using Api.Data;
+using Api.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,11 +18,12 @@ public class QuestionsController : ControllerBase
     _context = context;
   }
 
-  [HttpGet]
-  public async Task<IActionResult> GetQuestions()
+  [HttpGet("{filter}")]
+  public async Task<IActionResult> GetQuestions([FromRoute] string filter)
   {
     try
     {
+      var filters = FilterServices.StringToFilter(filter);
       var res = await _context.Questions.ToListAsync();
 
       return Ok(res);

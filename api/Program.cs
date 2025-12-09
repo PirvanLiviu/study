@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "cors",
                       policy => 
                       {
-                        policy.WithOrigins("localhost:5173").WithMethods("*").WithHeaders("*");
+                        policy.WithOrigins("http://localhost:5173").WithMethods("*").WithHeaders("*");
                       });
   });
 
